@@ -1,0 +1,35 @@
+/* Comentario CSS */
+
+/* Selectores: Identifican y delimitan los elementos HTML a los cuales se les aplica ese estilo
+selector {
+    propiedad: valor;
+    otra-propiedad: valor
+}
+*/
+
+/* Selector por etiqueta */
+h1,h2{
+    background-color: rgb(211, 179, 240) ;
+}
+
+/* Selector por clase */
+.destacado{
+    color: #0ba5b0;
+    font-size: 18px;
+}
+
+.linea-lateral{
+    border-left: 5px solid wrgb(28, 0, 128);
+    border-radius: 2px;
+}
+
+/* Selector universal */
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nombreplatillo{
+    color:rgb(176, 11, 154)a;
+    font-size: 18px;
+    border-bottom: 2px solid #0bb013;
+}
