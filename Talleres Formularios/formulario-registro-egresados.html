@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Egresados - CENFOTEC</title>
+</head>
+<body>
+
+    <header>
+        <h1>Sistema de Gestión de Egresados - Universidad CENFOTEC</h1>
+    </header>
+
+    <main>
+
+        <!-- Formulario de Inicio de Sesión -->
+        <section>
+            <h2>Inicio de Sesión</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Acceso al Sistema</legend>
+
+                    <div>
+                        <label for="login-email">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="login-email"
+                            name="login-email"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="login-password">Contraseña:</label>
+                        <input
+                            type="password"
+                            id="login-password"
+                            name="login-password"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <button type="submit">Iniciar Sesión</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Formulario de Registro Manual de Egresados -->
+        <section>
+            <h2>Registro Manual de Egresados</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Información Personal</legend>
+
+                    <div>
+                        <label for="identificacion">Identificación:</label>
+                        <input
+                            type="text"
+                            id="identificacion"
+                            name="identificacion"
+                            pattern="[0-9]{9}"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="nombre-completo">Nombre completo:</label>
+                        <input
+                            type="text"
+                            id="nombre-completo"
+                            name="nombre-completo"
+                            minlength="3"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="correo">Correo electrónico:</label>
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            pattern="[0-9]{8,12}"
+                            required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="fecha-registro">Fecha de registro:</label>
+                        <input
+                            type="date"
+                            id="fecha-registro"
+                            name="fecha-registro"
+                            value="2026-06-24"
+                            required>
+                    </div>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Lugares de Trabajo</legend>
+
+                    <div>
+                        <label for="empresa1">Empresa:</label>
+                        <input
+                            type="text"
+                            id="empresa1"
+                            name="empresa1">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="puesto1">Puesto:</label>
+                        <input
+                            type="text"
+                            id="puesto1"
+                            name="puesto1">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="fecha-inicio1">Fecha de inicio:</label>
+                        <input
+                            type="date"
+                            id="fecha-inicio1"
+                            name="fecha-inicio1">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label for="fecha-fin1">Fecha de fin:</label>
+                        <input
+                            type="date"
+                            id="fecha-fin1"
+                            name="fecha-fin1">
+                    </div>
+
+
+                </fieldset>
+
+                <br>
+                
+<hr>
+
+<!-- Formulario de Registro de Títulos Académicos -->
+<section>
+    <h2>Registro de Títulos Académicos</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Información del Título</legend>
+
+            <div>
+                <label for="egresado">Egresado:</label>
+                <select id="egresado" name="egresado" required>
+                    <option value="">Seleccione un egresado</option>
+                    <option value="1">Juan Pérez</option>
+                    <option value="2">María Rodríguez</option>
+                    <option value="3">Carlos Gómez</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="tipo-programa">Tipo de programa:</label>
+                <select id="tipo-programa" name="tipo-programa" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="bachillerato">Bachillerato</option>
+                    <option value="maestria">Maestría</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="1">Ingeniería de Software</option>
+                    <option value="2">Ciberseguridad</option>
+                    <option value="3">Ciencia de Datos</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="escuela-academica">Escuela académica:</label>
+                <select id="escuela-academica" name="escuela-academica" required>
+                    <option value="">Seleccione una escuela</option>
+                    <option value="tecnologia">Escuela de Tecnología</option>
+                    <option value="negocios">Escuela de Negocios</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="anio-graduacion">Año de graduación:</label>
+                <input
+                    type="number"
+                    id="anio-graduacion"
+                    name="anio-graduacion"
+                    min="1990"
+                    max="2026"
+                    required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="estado-titulo">Estado del título:</label>
+                <select id="estado-titulo" name="estado-titulo" required>
+                    <option value="">Seleccione un estado</option>
+                    <option value="activo">Activo</option>
+                    <option value="tramite">En trámite</option>
+                    <option value="suspendido">Suspendido</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Registrar Título</button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+</section>
+
+<hr>
+
+<!-- Formulario de Registro de Carreras -->
+<section>
+    <h2>Registro de Carreras</h2>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Información de la Carrera</legend>
+
+            <div>
+                <label for="nombre-carrera">Nombre de la carrera:</label>
+                <input
+                    type="text"
+                    id="nombre-carrera"
+                    name="nombre-carrera"
+                    required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="codigo-carrera">Código:</label>
+                <input
+                    type="text"
+                    id="codigo-carrera"
+                    name="codigo-carrera"
+                    pattern="[A-Za-z0-9]+"
+                    required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="escuela-asociada">Escuela asociada:</label>
+                <select id="escuela-asociada" name="escuela-asociada" required>
+                    <option value="">Seleccione una escuela</option>
+                    <option value="tecnologia">Escuela de Tecnología</option>
+                    <option value="negocios">Escuela de Negocios</option>
+                    <option value="diseno">Escuela de Diseño</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="duracion">Duración (años):</label>
+                <input
+                    type="number"
+                    id="duracion"
+                    name="duracion"
+                    min="1">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="descripcion">Descripción:</label><br>
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    rows="5"
+                    cols="50"></textarea>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Registrar Carrera</button>
+        <button type="reset">Limpiar</button>
+
+    </form>
+</section>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad CENFOTEC - Sistema de Gestión de Egresados</p>
+    </footer>
+
+</body>
+</html>
