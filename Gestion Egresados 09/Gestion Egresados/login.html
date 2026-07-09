@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión | Sistema de Gestión de Egresados</title>
+
+    <link rel="stylesheet" href="CSS\deco.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+
+        <div class="logo">
+            <h1>Universidad CENFOTEC</h1>
+            <p>Sistema de Gestión de Egresados</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html" class="activo">Iniciar sesión</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="egresados.html">Egresados</a></li>
+                <li><a href="carreras.html">Carreras</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="login">
+
+            <h2>Inicio de Sesión</h2>
+
+            <p>
+                Ingrese sus credenciales para acceder al sistema.
+            </p>
+
+            <form id="formulario" action="" novalidate>
+
+                <div class="campo">
+
+                    <label for="correo">
+                        Correo institucional
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@ucenfotec.ac.cr"
+                        required>
+
+                </div>
+
+                <div class="campo">
+
+                    <label for="password">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingrese su contraseña"
+                        minlength="8"
+                        required>
+
+                </div>
+
+                <div class="opciones">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Recordar sesión
+
+                    </label>
+
+                </div>
+
+                <button type="submit" class="boton">
+
+                    Ingresar
+
+                </button>
+
+            </form>
+
+            <p class="enlace">
+
+                <a href="#">
+                    ¿Olvidó su contraseña?
+                </a>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p>
+            Universidad CENFOTEC © 2026 / Mauro Zarate
+        </p>
+
+        <p>
+            Desarrollo Web | Proyecto
+        </p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

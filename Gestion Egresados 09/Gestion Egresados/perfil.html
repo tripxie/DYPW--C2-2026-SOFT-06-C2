@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Egresado | Sistema de Gestión de Egresados</title>
+
+    <link rel="stylesheet" href="CSS\deco.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+
+        <div class="logo">
+            <h1>Universidad CENFOTEC</h1>
+            <p>Sistema de Gestión de Egresados</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="perfil.html" class="activo">Perfil</a></li>
+                <li><a href="egresados.html">Egresados</a></li>
+                <li><a href="carreras.html">Carreras</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido -->
+    <main>
+
+        <section class="perfil">
+
+            <h2>Perfil del Egresado</h2>
+
+            <div class="foto-perfil">
+
+                <img src="assets\images\perfilpic.jpg" alt="Fotografía del egresado">
+
+            </div>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Información Personal</legend>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" value="Juan Pérez Gómez" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" value="juan.perez@email.com" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" value="8888-8888">
+
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" value="San José, Costa Rica">
+
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" value="1999-06-12">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Información Académica</legend>
+
+                    <label for="programa">Tipo de programa</label>
+
+                    <select id="programa">
+                        <option>Bachillerato</option>
+                        <option>Técnico</option>
+                        <option>Maestría</option>
+                    </select>
+
+                    <label for="carrera">Carrera</label>
+
+                    <input type="text" id="carrera"
+                        value="Ingeniería del Software">
+
+                    <label for="graduacion">Año de graduación</label>
+
+                    <input type="number"
+                        id="graduacion"
+                        value="2025">
+
+                    <label for="estado">Estado del título</label>
+
+                    <select id="estado">
+                        <option>Entregado</option>
+                        <option>En proceso</option>
+                        <option>Pendiente</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Experiencia Laboral</legend>
+
+                    <label for="empresa">Empresa</label>
+
+                    <input
+                        type="text"
+                        id="empresa"
+                        value="Tech Solutions CR">
+
+                    <label for="puesto">Puesto</label>
+
+                    <input
+                        type="text"
+                        id="puesto"
+                        value="Desarrollador Web">
+
+                    <label for="experiencia">Años de experiencia</label>
+
+                    <input
+                        type="number"
+                        id="experiencia"
+                        value="2">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Habilidades</legend>
+
+                    <div class="habilidades">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Scrum</span>
+
+                    </div>
+
+                </fieldset>
+
+                <div class="botones">
+
+                    <button type="submit" class="boton">
+                        Guardar cambios
+                    </button>
+
+                    <button type="reset" class="boton-secundario">
+                        Cancelar
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p> Universidad CENFOTEC © 2026 / Mauro Zarate </p>
+
+        <p> Desarrollo Web | Proyecto </p>
+
+    </footer>
+
+        
+</body>
+
+</html>

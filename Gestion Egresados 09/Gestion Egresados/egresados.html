@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Egresados | Sistema de Gestión de Egresados</title>
+
+    <link rel="stylesheet" href="CSS\deco.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header>
+
+        <div class="logo">
+            <h1>Universidad CENFOTEC</h1>
+            <p>Sistema de Gestión de Egresados</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="egresados.html" class="activo">Egresados</a></li>
+                <li><a href="carreras.html">Carreras</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <section class="gestion">
+
+            <h2>Gestión de Egresados</h2>
+
+            <p>
+                Consulte, busque y administre la información de los egresados
+                registrados en el sistema.
+            </p>
+
+            <!-- Barra de herramientas -->
+            <div class="barra-herramientas">
+
+                <input type="text"
+                       placeholder="Buscar por nombre...">
+
+                <select>
+                    <option>Todas las carreras</option>
+                    <option>Ingeniería del Software</option>
+                    <option>Ciberseguridad</option>
+                    <option>Ciencia de Datos</option>
+                    <option>Administración</option>
+                </select>
+
+                <select>
+                    <option>Todos los años</option>
+                    <option>2026</option>
+                    <option>2025</option>
+                    <option>2024</option>
+                    <option>2023</option>
+                </select>
+
+                <button class="boton">
+                    Nuevo egresado
+                </button>
+
+            </div>
+
+            <!-- Tabla -->
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Carrera</th>
+                        <th>Año</th>
+                        <th>Correo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>001</td>
+                        <td>Juan Pérez Gómez</td>
+                        <td>Ingeniería del Software</td>
+                        <td>2025</td>
+                        <td>juan@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>María Rodríguez</td>
+                        <td>Ciberseguridad</td>
+                        <td>2024</td>
+                        <td>maria@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>Carlos Jiménez</td>
+                        <td>Ingeniería del Software</td>
+                        <td>2025</td>
+                        <td>carlos@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>Ana Vargas</td>
+                        <td>Ciencia de Datos</td>
+                        <td>2023</td>
+                        <td>ana@email.com</td>
+                        <td>Inactivo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>005</td>
+                        <td>David Mora</td>
+                        <td>Administración</td>
+                        <td>2022</td>
+                        <td>david@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>006</td>
+                        <td>Sofía Chaves</td>
+                        <td>Ingeniería del Software</td>
+                        <td>2026</td>
+                        <td>sofia@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>007</td>
+                        <td>José Ramírez</td>
+                        <td>Ciberseguridad</td>
+                        <td>2024</td>
+                        <td>jose@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>008</td>
+                        <td>Laura Sánchez</td>
+                        <td>Ciencia de Datos</td>
+                        <td>2025</td>
+                        <td>laura@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>009</td>
+                        <td>Andrés Solano</td>
+                        <td>Administración</td>
+                        <td>2023</td>
+                        <td>andres@email.com</td>
+                        <td>Inactivo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>010</td>
+                        <td>Gabriela Castro</td>
+                        <td>Ingeniería del Software</td>
+                        <td>2026</td>
+                        <td>gabriela@email.com</td>
+                        <td>Activo</td>
+                        <td>
+                            <button class="editar">Editar</button>
+                            <button class="eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+
+        <p> Universidad CENFOTEC © 2026 / Mauro Zarate </p>
+
+        <p> Desarrollo Web | Proyecto </p>
+
+    </footer>
+
+</body>
+
+</html>
