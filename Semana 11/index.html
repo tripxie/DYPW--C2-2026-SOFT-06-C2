@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Proyecto | Gestión de Proyectos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="brand">
+        <div class="brand-icon">📁</div>
+        <span>Proyectos REST</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Nuevo Proyecto</a></li>
+        <li><a href="proyectos.html" class="nav-link">Ver Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+    <div class="card">
+      <div class="card-header">
+        <h1 class="card-title">Registrar Nuevo Proyecto</h1>
+        <p class="card-subtitle">Ingrese la información del proyecto para enviarla a la API REST (POST http://localhost:3000/proyectos)</p>
+      </div>
+
+      <!-- Notification alert container -->
+      <div id="alert-container"></div>
+
+      <!-- Form -->
+      <form id="project-form" novalidate>
+        <!-- Nombre del Proyecto -->
+        <div class="form-group">
+          <label for="nombre" class="form-label">Nombre del Proyecto *</label>
+          <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            class="form-control" 
+            placeholder="Ej: Aero cargo" 
+            required
+          >
+          <div id="error-nombre" class="error-message" style="display: none;"></div>
+        </div>
+
+        <!-- Fecha de Inicio -->
+        <div class="form-group">
+          <label for="fecha_inicio" class="form-label">Fecha de Inicio *</label>
+          <input 
+            type="date" 
+            id="fecha_inicio" 
+            name="fecha_inicio" 
+            class="form-control" 
+            required
+          >
+          <div id="error-fecha" class="error-message" style="display: none;"></div>
+        </div>
+
+        <!-- Estado del Proyecto -->
+        <div class="form-group">
+          <label for="estado" class="form-label">Estado del Proyecto *</label>
+          <select id="estado" name="estado" class="form-control" required>
+            <option value="" disabled selected>Seleccione un estado...</option>
+            <option value="En curso">En curso</option>
+            <option value="Finalizado">Finalizado</option>
+            <option value="Detenido">Detenido</option>
+            <option value="Pendiente">Pendiente</option>
+            <option value="Cancelado">Cancelado</option>
+          </select>
+          <div id="error-estado" class="error-message" style="display: none;"></div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+          <a href="proyectos.html" class="btn btn-secondary">Cancelar</a>
+          <button type="submit" id="btn-guardar" class="btn btn-primary">
+            <span>Guardar Proyecto</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sistema de Gestión de Proyectos - API REST Client</p>
+  </footer>
+
+  <script src="js/registrar.js"></script>
+</body>
+</html>
