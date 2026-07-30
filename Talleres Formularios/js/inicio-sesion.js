@@ -1,8 +1,23 @@
 $(function () {
-    // Selección de elementos DOM con jQuery
+    // =========================================================================
+    // CONVERSIÓN DE SELECTORES Y ELEMENTOS A JQUERY
+    // =========================================================================
+
+    // Antes (Native JS con getElementById):
+    // const contrasennia = document.getElementById("contrasenna");
     const contrasennia = $("#contrasenna");
+
+    // Antes (Native JS con querySelector):
+    // const correo = document.querySelector("#correo");
     const correo = $("#correo");
+
+    // Antes (Native JS con getElementById):
+    // const btnIniciarSesion = document.getElementById("iniciar-sesion");
     const btnIniciarSesion = $("#iniciar-sesion");
+
+    // Antes (Native JS con querySelectorAll):
+    // const camposRequeridos = document.querySelectorAll("input[required]");
+    const camposRequeridos = $("input[required]");
 
     /* 
     Recuperar datos de LS: 
@@ -16,6 +31,7 @@ $(function () {
 
     Eliminar todos los datos almacenados por el sitio: localStorage.clear();
     */
+
     function iniciarSesion() {
         // Verificar las credenciales con la BD o recuperar los datos de LS
 
@@ -26,6 +42,7 @@ $(function () {
         let existe = false;
 
         for (let i = 0; i < usuarios.length; i++) {
+            // Conversión de propiedad de valor: correo.value -> correo.val()
             if (usuarios[i].correo === correo.val()) {
                 existe = true;
                 Swal.fire({
@@ -48,13 +65,16 @@ $(function () {
         }
     }
 
-    // Manejo de eventos con jQuery
+    // =========================================================================
+    // MANEJO DE EVENTOS CON JQUERY
+    // Antes (Native JS): btnIniciarSesion.addEventListener("click", iniciarSesion);
+    // =========================================================================
     btnIniciarSesion.on("click", iniciarSesion);
 });
 
 /* 
 =============================================================================
-TABLA COMPARATIVA: JavaScript Nativo vs jQuery
+TABLA DE EQUIVALENCIAS: JavaScript Nativo vs jQuery
 =============================================================================
 JavaScript Nativo                                      jQuery
 --------------------------------------------------     --------------------------------------------------
